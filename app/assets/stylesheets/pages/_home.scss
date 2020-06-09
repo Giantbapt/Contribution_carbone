@@ -1,1 +1,25 @@
 // Specific CSS for your home-page
+.wrapper {
+	width: 100vw;
+	height: calc(100vh - 100px);
+	background-color: $green;
+	text-align: center;
+	justify-content: center;
+	vertical-align: center;
+	padding-top: 5%;
+}
+.titre {
+	color: white;
+	span {
+		color: $dark-green;
+	}
+}
+
+.wrapper-sondage {
+	justify-content: center;
+}
+.img-collaboration {
+	height: 200px;
+	margin-top: 50px;
+
+}
