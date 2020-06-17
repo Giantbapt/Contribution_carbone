@@ -9,17 +9,63 @@
 	padding-top: 5%;
 }
 .titre {
-	color: white;
+	color: $dark-green;
 	span {
-		color: $dark-green;
+		color: white;
 	}
 }
 
 .wrapper-sondage {
+	padding: 20px;
+
+	background-color: $dark-green;
+	h2 {
+		color: white;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		margin-left: 20px;
+	}
+
+}
+
+.wrapper-demarche {
+	background-color: $dark-green;
+	color: white;
+	padding: 20px;
+	// display: grid;
+}
+.row {
+	padding: 20px;
+}
+// .block{
+// 	margin: 10px;
+// }
+.sondage {
 	justify-content: center;
+	display: flex;
+	width: 100%;
 }
 .img-collaboration {
-	height: 200px;
+	height: 220px;
 	margin-top: 50px;
 
+}
+.wrapper-team{
+	padding: 20px;
+
+	background-color: $green;
+	h2 {
+		color: white;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		margin-left: 20px;
+	}
+}
+.img-rounded {
+	height : 150px;
+
+}
+.team {
+	display: flex;
+	justify-content: space-around;
 }
