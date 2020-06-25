@@ -1,0 +1,29 @@
+.wrapper-resultat {
+	width: 100vw;
+	min-height: 100vh;
+	background-color: $green;
+	text-align: center;
+	justify-content: center;
+	vertical-align: center;
+	padding-top: 130px;
+	padding-bottom: 130px; 
+	color: white;
+	h1 {
+		// font-size: 20px;
+	span {
+		color: $dark-green;
+	}
+	}
+	h2 {
+		margin-top: 30px;
+		font-size: 20px;
+		
+	}
+	p {
+		color: white;
+	}
+}
+
+.sondage-resultats{
+	align-items: center;
+}
