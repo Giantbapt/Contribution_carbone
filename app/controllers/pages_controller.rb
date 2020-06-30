@@ -7,4 +7,8 @@ class PagesController < ApplicationController
 
   def ressources
   end
+
+  def questionnaire
+  end
+  
 end

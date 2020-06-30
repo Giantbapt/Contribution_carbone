@@ -1,5 +1,5 @@
-.wrapper-resultat {
-	width: 100vw;
+.wrapper-questionnaire {
+		width: 100vw;
 	min-height: 100vh;
 	background-color: $green;
 	text-align: center;
@@ -10,7 +10,6 @@
 	color: white;
 	h1 {
 		// font-size: 20px;
-
 	span {
 		color: $dark-green;
 	}
@@ -22,14 +21,10 @@
 	}
 	p {
 		color: white;
-		text-align: justify;
-		color: $dark-green;
-		span {
-			color: white;
-		}
+		
 	}
 }
 
-.sondage-resultats{
-	align-items: center;
+.sondage-resultat {
+	width: 800px;
 }
