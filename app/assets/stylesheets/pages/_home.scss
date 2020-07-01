@@ -128,3 +128,34 @@ h3 span {
     	height: 200px;
     }
 }
+.btn-wrapper{
+	width: 100%;
+	justify-content: center;
+	display: flex;
+}
+.btn-wrapper{
+	width: 100%;
+	justify-content: center;
+	display: flex;
+}
+.btn-questionnaire{
+	padding: 20px;
+	margin: 20px;
+	color: white;
+	background-color: $green;
+	align-item: center;
+	border-radius: 5px;
+	a {
+		color: white;
+	}
+}
+.btn-questionnaire:hover{
+	padding: 20px;
+	color: white;
+	background-color: $dark-green;
+	align-item: center;
+	a {
+		color: white;
+	}
+
+}
