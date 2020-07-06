@@ -25,6 +25,40 @@
 	}
 }
 
-.sondage-resultat {
+@media (max-width: 420px) {
+	 .sondage-resultat {
+	width: 300px;
+	}
+
+}
+
+@media (min-width: 421px) and (max-width: 767px) {
+		.iframe-questionnaire {
+			width: 400px;
+		}
+
+}
+
+@media (min-width: 768px) and (max-width: 998px) {
+		.iframe-questionnaire {
+	width: 700px;
+}
+   
+ }
+@media (min-width: 998px) and (max-width: 1200px) {
+		.iframe-questionnaire {
 	width: 800px;
+}
+    
+}
+
+@media (min-width: 1200px) {
+		.iframe-questionnaire {
+	width: 900px;
+	}
+	.freebirdFormviewerViewCenteredContent {
+
+    width: 800px;
+}
+    
 }

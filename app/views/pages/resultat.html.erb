@@ -3,6 +3,7 @@
 		<div class="container">
 			<h1><span>Voici les résultats du</span> premier sondage <span>sur <br> la compensation carbone </span></h1>
 			<p>Nous avons décidé d'effectuer un premier questionnaire pour comprendre si les français connaissaient la compensation carbone, s'ils l'utilisaient, et surtout ce qu'ils en pensaient. <br><br> Il en est ressorti que <span>75% des répondants connaissaient la compensation carbone, que 58% des personnes ont déjà vu une entreprise communique à propos de leur compensation carbone, et que 73% des répondants souhaiteraient compenser l'impact carbone de leurs achats. </span><br>Toutefois les critiques ont été très nombreuses envers ces projets jugés pour beaucoup de "marketing", de "greenwashing" et les ambitions réelles des entreprises ont été remises en question. <span>Il y est critiqué l'opacité autour des projets, le manque de transparence sur le prix de la tonne carbone, sur la continuité des projets, sur la délocalisation de la compensation et sur le manque d'objectifs des entreprises de réductions de leur impact carbone avant la compensation. </span><br><br>Ce sont ces chiffres qui nous ont donné la conviction qu'il fallait définir le cahier des charges de la compensation carbone des consommateurs. Dans notre logique coopérative et transparente nous mettons à la disposition de tous le résultat de cette première enquête.</p>
+		</div>
 			<div class="sondage-resultats">
 				<%= image_tag('sondage 1.png', class: "sondage-resultat")%>
 				<%= image_tag('sondage 2.png', class: "sondage-resultat")%>
@@ -26,8 +27,11 @@
 				<%= image_tag('sondage 21.png', class: "sondage-resultat")%>
 				
 			</div>
-		</div>
 		
+	</div>
+	<div class="btn-wrapper">
+				
+		<%= link_to "Répondre au questionnaire", questionnaire_url, class:('btn-resultat') %>
 	</div>
 	
 </div>

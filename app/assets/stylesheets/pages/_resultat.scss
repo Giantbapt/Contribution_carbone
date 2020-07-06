@@ -32,4 +32,40 @@
 
 .sondage-resultats{
 	align-items: center;
+
 }
+
+@media (max-width: 420px) {
+	 .sondage-resultat {
+	width: 300px;
+	}
+
+}
+
+@media (min-width: 421px) and (max-width: 767px) {
+ 	.sondage-resultat {
+		width: 400px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 998px) {
+		.sondage-resultat {
+	width: 600px;
+	}
+   
+}
+@media (min-width: 998px) and (max-width: 1200px) {
+		.iframe-questionnaire {
+	width: 800px;
+	}
+    
+}
+
+@media (min-width: 1200px) {
+	.sondage-resultat {
+	width: 800px;
+	}
+    
+}
+
+

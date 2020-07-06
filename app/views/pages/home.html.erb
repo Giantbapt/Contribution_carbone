@@ -17,20 +17,20 @@
 
 				<h3>Qu'est-ce que la compensation carbone ?</h3>
 				<p>
-				L'ensemble des individus, du particulier à l’entreprise en passant par l'État, relâche dans l’atmosphère des gazs à effet de serre (dont du dioxyde de carbone (CO2)). Ces émissions de gaz à effet de serre entraînent de lourdes répercussions sur l’environnement et le climat en participant activement au réchauffement climatique. Des actions concrètes, comme la compensation carbone, s’inscrivent dans la réduction de ces émissions. 
+				L'ensemble des individus, du particulier à l’entreprise en passant par l'État, relâche dans l’atmosphère des gaz à effet de serre (dont du dioxyde de carbone (CO2)). Ces émissions de gaz à effet de serre entraînent de lourdes répercussions sur l’environnement et le climat en participant activement au réchauffement climatique. Des actions concrètes, comme la compensation carbone, s’inscrivent dans la réduction de ces émissions. 
 				<br><br>
-				La compensation carbone consiste à équilibrer (ou neutraliser dans certain cas) ses émissions de carbone <strong>après les avoir réduites au maximum</strong> en participant financièrement à des programmes de séquestration ou de réduction d’émissions. Il existe de nombreuses solutions telles que planter des arbres, lutter contre la déforestation, remplacer des centrales à charbon par des alternatives moins polluantes ect...  <br>
+				La compensation carbone consiste à équilibrer (ou neutraliser dans certains cas) ses émissions de carbone <strong>après les avoir réduites au maximum</strong> en participant financièrement à des programmes de séquestration ou de réduction d’émissions. Il existe de nombreuses solutions telles que planter des arbres, lutter contre la déforestation, remplacer des centrales à charbon par des alternatives moins polluantes ect.  <br>
 				Vous trouverez de nombreuses informations à ce sujet dans notre rubrique <%= link_to "Ressources", ressources_url %>.
 				</p>
 
 				<h3>Notre constat : la compensation carbone est un procédé intéressant mais mal utilisé par les entreprises !</h3>
 				<p>
-				Cette démarche est de plus en plus utilisé par les gros acteurs économiques, notamment par les entreprises l'incluant dans le cadre de leur responsabilité sociale et environnementale (RSE). Les projets entrepris par les grandes enseignes sont encore très mal perçu par le grand public: incertitude sur la réalité et l’efficacité des projets, projets délocalisés par rapport au lieu de l'émission, prix payé insuffisant pour prendre en compte les externalités négatives engendrées par la pollution, critères des projets de compensation pas assez exigeants et opaques, mauvaise utilisation de la communication autour des projets, manque de transparence. Nous avons pu observer de très nombreuses critiques dans notre tout premier questionnaire dont vous pouvez découvrir les <%= link_to "Resultats", resultat_url %>. Toutefois 75% des répondants souhaiteraient compenser leur impact carbone !
+				Cette démarche est de plus en plus utilisée par les gros acteurs économiques, notamment par les entreprises l'incluant dans le cadre de leur responsabilité sociale et environnementale (RSE). Les projets entrepris par les grandes enseignes sont encore très mal perçus par le grand public : incertitude sur la réalité et l’efficacité des projets, projets délocalisés par rapport au lieu de l'émission, prix payé insuffisant pour prendre en compte les externalités négatives engendrées par la pollution, critères des projets de compensation pas assez exigeants et opaques, mauvaise utilisation de la communication autour des projets, manque de transparence. Nous avons pu observer de très nombreuses critiques dans notre tout premier questionnaire dont vous pouvez découvrir les <%= link_to "résultats", resultat_url %>. Toutefois 75% des répondants souhaiteraient compenser leur impact carbone !
 				<br><br>
-				Nous voulons établir une offre de compensation carbone juste et transparente permettant de faire bouger les choses afin de contribuer aux enjeux écologiques actuel.
+				Nous voulons établir une offre de compensation carbone juste et transparente permettant de faire bouger les choses afin de contribuer aux enjeux écologiques actuels.
 				</p>
 				<h3>Notre objectif : Créer collaborativement le cahier des charges de la compensation carbone.</h3>
-				<p><strong>Construisons ensemble ce cahier des charges !</strong> Pas besoin d'être un expert, n'importe qui peut y répondre en écoutant ses valeurs. Faisons participer les entreprises et les consommateurs via la mise en place de projets répondant à des critères précis choisi collectivement. Nous voulons fédérer une communauté unique de consommateurs capable de définir par eux même leurs cahier des charges, créer leurs projets de compensation et vérifier la stricte application à la compensation carbone des entreprises de ce <strong>cahier des charges citoyen</strong>. </p>
+				<p><strong>Construisons ensemble ce cahier des charges !</strong> Pas besoin d'être un expert, n'importe qui peut y répondre en écoutant ses valeurs. Faisons participer les entreprises et les consommateurs via la mise en place de projets répondant à des critères précis choisis collectivement. Nous voulons fédérer une communauté unique de consommateurs capable de définir par eux même leurs cahiers des charges, créer leurs projets de compensation et vérifier la stricte application à la compensation carbone des entreprises de ce <strong>cahier des charges citoyen</strong>. </p>
 
 				<h3>De la compensation carbone à la contribution carbone.</h3>
 				<p>Nous rejoignons l'avis du cabinet de conseil Carbon4 et de sa tribune <a href="http://www.carbone4.com/neditespluscompensation-de-compensation-a-contribution/">NE DITES PLUS « COMPENSATION » : DE LA COMPENSATION À LA CONTRIBUTION</a>, pour changer de paradigme. L'objectif n'est pas de compenser son impact carbone propre, mais bien, collectivement, de contribuer ensemble à la réduction de l'impact carbone de la France pour lutter contre le réchauffement climatique. </p>
@@ -42,7 +42,7 @@
 			</div>
 			<div class="btn-wrapper">
 				
-				<div class="btn-questionnaire"><%= link_to "Répondre au questionnaire", questionnaire_url %></div>
+				<%= link_to "Répondre au questionnaire", questionnaire_url, class:('btn-questionnaire') %>
 			</div>
 		</div>
 		
@@ -55,7 +55,12 @@
 			<div class="row ">
 				<div class="block-left col-md-8">
 					<h3>1 - <span>Imaginer la meilleure contribution carbone via le questionnaire</span></h3>
-					<p>Afin de créer la cahier des charges, il est nécessaire d’auditer les consommateurs sur leur vision globale des projets de compensation carbone. Ce questionnaire est disponible en ligne sur notre site, et peut être rempli par tous les consommateurs. Nous avons besoin des réponses des consommateurs-citoyens pour réaliser ce cahier des charges. <strong>L'objectif : 1000 réponses !</strong>
+					<p>Afin de créer le cahier des charges, il est nécessaire d’auditer les consommateurs sur leur vision globale des projets de compensation carbone. Ce questionnaire est disponible en ligne sur notre site, et peut être rempli par tous les consommateurs. Nous avons besoin des réponses des consommateurs-citoyens pour réaliser ce cahier des charges. <strong>L'objectif : 1000 réponses !</strong>
+					<div class="btn-wrapper">
+						
+						<%= link_to "Répondre au questionnaire", questionnaire_url, class:('btn-white') %>
+						
+					</div>
 					</p>
 				</div>
 				<div class="block-right block-illu col-md">
@@ -82,7 +87,7 @@
 				<div class="block-left col-md-8">
 
 					<h3>3 - <span>Interpeller, appeler et inciter les entreprises pour qu'elles appliquent ce cahier des charges</span></h3>
-					<p>Après consultation du cahier des charges, chaque consommateur se doit d’interpeller les entreprises afin d’exiger l’application de ce cahier des charges pour la contribution carbone. Ainsi, les clients et les parties prenantes des entreprises peuvent inciter le changement des pratiques de compensation et les faire progresser. Des outils seont mis à disposition de tous par l'équipe pour vous aider dans cette démarche.</p>
+					<p>Après consultation du cahier des charges, chaque consommateur se doit d’interpeller les entreprises afin d’exiger l’application de ce cahier des charges pour la contribution carbone. Ainsi, les clients et les parties prenantes des entreprises peuvent inciter le changement des pratiques de compensation et les faire progresser. Des outils seront mis à disposition de tous par l'équipe pour vous aider dans cette démarche.</p>
 				</div>
 				<div class="block-right block-illu col-md">
 					<div class="illustration-indiv">
@@ -98,8 +103,8 @@
 				</div>
 				<div class="block-right col-md-8">
 					
-					<h3>4 - <span>Créer des projets de contribution carbone respectant le cahier des charges et accessibles aux entreprises</span> </h3>
-					<p>Les projets seront choisi par les consommateurs-sociétaires. Ainsi, les sociétaires pourront auditer les projets de compensation carbone de l’entreprise afin de vérifier la stricte application du cahier des charges.</p>
+					<h3>4 - <span>Créer des projets de contribution carbone respectant le cahier des charges et accessible aux entreprises</span> </h3>
+					<p>Les projets seront choisis par les consommateurs-sociétaires. Ainsi, les sociétaires pourront auditer les projets de compensation carbone de l’entreprise afin de vérifier la stricte application du cahier des charges.</p>
 				</div></div>
 		</div>
 	</div>
@@ -117,21 +122,27 @@
 	<div class="container">
 		<div class="offset-md-2 col-md-8">
 			<h2>L'ÉQUIPE DE CHOC</h2>
-			<p>Après s'être intérrogé sur le greenwasing et la compensation carbone, nous avons pu constaté de très nombreuses critiques du grand public. Il nous a donc semblé important d'agir en conséquence pour créer la compensation carbone qui réponde à l'exigence des citoyens consommateurs que nous sommes. Dans une ambiance conviviale et participative nous travaillons à changer le monde à notre échelle. </p>
-			<div class="team">
-				<div class="member">
-					<%= image_tag('Bapt.png', class: "img-rounded") %>
+			<p>Après s'être interrogé sur le greenwasing et la compensation carbone, nous avons pu constater de très nombreuses critiques du grand public. Il nous a donc semblé important d'agir pour créer la compensation carbone qui réponde à l'exigence des citoyens-consommateurs que nous sommes. Dans une ambiance conviviale et participative nous travaillons à essayer d'améliorer le monde à notre échelle. </p>
+		</div>
+		<div class="offset-md-1 col-md-10">
+			<div class="team row">
+				<div class="member col-md-6">
+					<div class="image-team">
+						<%= image_tag('Bapt.png', class: "img-rounded") %>
+						
+					</div>
 					<div class="name">Baptiste Chebassier</div>
-					<div class="description col-8">Créatif et critique, Baptiste souhaite toujours réinventer le monde dans lequel il vit. Mais il sait le faire en s'amusant et souhaite que tout le monde participe à ses aventures !</div>
+					<div class="description ">Créatif et critique, Baptiste souhaite toujours réinventer le monde dans lequel il vit. Mais il sait le faire en s'amusant et souhaite que tout le monde participe à ses aventures !</div>
 					
 				</div>
-				<div class="member">
-					<%= image_tag('jeanne.png', class: "img-rounded") %>
+				<div class="member col-md-6">
+					<div class="image-team">	
+						<%= image_tag('jeanne.png', class: "img-rounded") %>
+					</div>
 					<div class="name">Jeanne Rassart</div>
-					<div class="description col-8"></div>
+					<div class="description ">Engagée dans les causes qui lui tiennent à cœur, Jeanne entreprend l’avenir avec enthousiasme en s’interrogeant sur les meilleures façons d’améliorer le monde dans lequel elle vit.  Elle est toujours partante pour de nouvelles aventures !</div>
 				</div>
 			</div>
-			
-		</div>
+		</div>	
 	</div>
 </div>

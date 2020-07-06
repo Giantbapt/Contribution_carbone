@@ -98,6 +98,9 @@ p {
 		margin-left: 20px;
 		text-align: center;
 	}
+	p {
+		color: $dark-green;
+	}
 }
 .img-rounded {
 	height : 150px;
@@ -106,8 +109,28 @@ p {
 .team {
 	display: flex;
 	justify-content: space-around;
+
+}
+.member {
+	margin-top: 20px;
 }
 
+.image-team {
+	display: flex;
+	justify-content: center;
+}
+.name {
+	text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: $dark-green;
+}
+
+.description {
+	text-align: justify;
+	color: $dark-green;
+}
 .illustration-indiv img {
 	height: 180px;
 }
@@ -159,3 +182,4 @@ h3 span {
 	}
 
 }
+
