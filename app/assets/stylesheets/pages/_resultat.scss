@@ -1,18 +1,18 @@
 .wrapper-resultat {
 	width: 100vw;
 	min-height: 100vh;
-	background-color: $green;
+	background-color: white;
 	text-align: center;
 	justify-content: center;
 	vertical-align: center;
 	padding-top: 130px;
 	padding-bottom: 130px; 
-	color: white;
+	color: $dark-green;
 	h1 {
 		// font-size: 20px;
 
 	span {
-		color: $dark-green;
+		font-weight: bolder;
 	}
 	}
 	h2 {
@@ -25,7 +25,7 @@
 		text-align: justify;
 		color: $dark-green;
 		span {
-			color: white;
+			font-weight: bolder;
 		}
 	}
 }
@@ -33,6 +33,16 @@
 .sondage-resultats{
 	align-items: center;
 
+}
+.wrapper-sondage-resultats {
+	width: 100vw;
+	min-height: 100vh;
+	background-color: $dark-green;
+	justify-content: center;
+	vertical-align: center;
+	padding-top: 40px;
+	padding-bottom: 130px; 
+	text-align: center;
 }
 
 @media (max-width: 420px) {
@@ -55,7 +65,7 @@
    
 }
 @media (min-width: 998px) and (max-width: 1200px) {
-		.iframe-questionnaire {
+		.sondage-resultat {
 	width: 800px;
 	}
     

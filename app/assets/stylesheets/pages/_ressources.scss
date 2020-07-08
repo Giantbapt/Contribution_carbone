@@ -1,21 +1,49 @@
 .wrapper-ressources{
 	width: 100vw;
 	min-height: 100vh;
-	background-color: $green;
+	background-color: white;
 	text-align: center;
 	justify-content: center;
 	vertical-align: center;
 	padding-top: 130px;
-	color: white;
+	color: $dark-green;
 	h1 {
 		font-size: 30px;
 	}
 	h2 {
-		margin-top: 30px;
+		margin-top: 50px;
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+	h3 {
 		font-size: 20px;
-
+		font-weight: bolder;
 	}
 	a {
-		color: $dark-green;
+		color: $green;
+		font-weight: bolder;
+		cursor: pointer;
+
 	}
+	a:hover{
+		color: $dark-green;
+		cursor: pointer
+	}
+	p{
+		text-align: justify;
+		margin-top: 20px;
+	}
+	 h3 span {
+		box-shadow: inset 0px -2px #66C0BE;
+	}
+	h2 span {
+		box-shadow: inset 0px -6px #66C0BE;
+	}
+
+}
+.img-def{
+	width: 100%;
+}
+.article {
+	padding-left: 20px; 
 }

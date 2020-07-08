@@ -53,6 +53,27 @@
 		color: white;
 	}
 }
+.btn-green {
+	padding: 20px;
+	margin: 20px;
+	color: white;
+	background-color: $green;
+	align-item: center;
+	border-radius: 5px;
+	cursor: pointer;
+	a {
+		color: white;
+	}
+}
+.btn-green:hover{
+	padding: 20px;
+	color: $dark-green;
+	background-color: $white;
+	align-item: center;
+	a {
+		color: $dark-green;
+	}
+}
 .btn-resultat {
 	padding: 20px;
 	margin: 20px;
@@ -74,3 +95,48 @@
 		color: white;
 	}
 }
+.btn-ressources {
+	padding: 20px;
+	margin-top: 40px !important;
+	margin: 20px;
+	color: white;
+	background-color: $dark-green;
+	align-item: center;
+	border-radius: 5px;
+	cursor: pointer;
+	a {
+		color: white;
+	}
+}
+.btn-ressources:hover{
+	padding: 20px;
+	color: $dark-green;
+	background-color: white;
+	align-item: center;
+	a {
+		color: $dark-green;
+	}
+}.btn-ressources-green {
+	padding: 20px;
+	text-align: center;
+	margin: 20px;
+	width: 150px;
+	color: white;
+	background-color: $green;
+	align-item: center;
+	border-radius: 5px;
+	cursor: pointer;
+	a {
+		color: white;
+	}
+}
+.btn-ressources-green:hover{
+	padding: 20px;
+	color: white;
+	background-color: $dark-green;
+	align-item: center;
+	a {
+		color: white;
+	}
+}
+// .btn-ressources 
