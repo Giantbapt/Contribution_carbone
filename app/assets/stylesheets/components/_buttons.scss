@@ -17,6 +17,8 @@
 	align-item: center;
 	border-radius: 5px;
 	cursor: pointer;
+		font-family: "Poppins";
+
 	
 	a {
 		color: white;
@@ -39,6 +41,7 @@
 	background-color: white;
 	align-item: center;
 	border-radius: 5px;
+	font-family: "Poppins";
 	cursor: pointer;
 	a {
 		color: $dark-green;
@@ -54,6 +57,7 @@
 	}
 }
 .btn-green {
+	font-family: "Poppins";
 	padding: 20px;
 	margin: 20px;
 	color: white;
@@ -75,6 +79,7 @@
 	}
 }
 .btn-resultat {
+	font-family: "Poppins";
 	padding: 20px;
 	margin: 20px;
 	color: $dark-green;
@@ -96,6 +101,7 @@
 	}
 }
 .btn-ressources {
+	font-family: "Poppins";
 	padding: 20px;
 	margin-top: 40px !important;
 	margin: 20px;
@@ -117,6 +123,7 @@
 		color: $dark-green;
 	}
 }.btn-ressources-green {
+	font-family: "Poppins";
 	padding: 20px;
 	text-align: center;
 	margin: 20px;
