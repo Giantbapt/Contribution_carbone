@@ -146,4 +146,29 @@
 		color: white;
 	}
 }
-// .btn-ressources 
+
+.buttons-share {
+	display: flex;
+	justify-content: space-around;
+}
+.btn-share{
+	margin-left: 20px;
+}
+.btn-mail {
+	font-family: "Poppins";
+
+	text-align: center;
+	color: white;
+
+	cursor: pointer;
+	a {
+		color: white;
+	}
+}
+.btn-mail:hover{
+	color: $dark-green;
+	a {
+		color: $dark-green;
+
+	}
+}
