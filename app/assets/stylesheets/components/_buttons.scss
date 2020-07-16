@@ -26,6 +26,7 @@
 }
 .btn-questionnaire:hover{
 	padding: 20px;
+	cursor: pointer;
 	color: white;
 	background-color: $dark-green;
 	align-item: center;
@@ -153,6 +154,7 @@
 }
 .btn-share{
 	margin-left: 20px;
+	height: 80px;
 }
 .btn-mail {
 	font-family: "Poppins";
@@ -167,6 +169,7 @@
 }
 .btn-mail:hover{
 	color: $dark-green;
+	cursor: pointer;
 	a {
 		color: $dark-green;
 
