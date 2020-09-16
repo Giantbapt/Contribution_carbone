@@ -54,3 +54,69 @@
 .navbar-collapse {
 	justify-content: flex-end;
 }
+
+.number-responses {
+    padding: 5px;
+    margin: 20px;
+    color: #327576;
+    background-color: white;
+    align-item: center;
+    border-radius: 5px;
+    font-family: "Poppins";
+      text-decoration: none;
+    p {
+      margin: 0;
+      text-decoration: none;
+    }
+    a:hover {
+      color: $dark-green !important;
+      text-decoration: none !important;
+    }
+}
+.number-responses a:hover {
+  color: $dark-green !important;
+      text-decoration: none !important;
+}
+
+.progress {
+  text-decoration: none;
+  width: 300px;
+  background-color: $green !important;
+  .progress-bar {
+     background-color: $dark-green !important;
+
+  }
+}
+
+@media (max-width: 500px) {
+  .number-responses {
+    font-size: 12px;
+    margin: 0px;
+  }
+  .progress {
+    width : 130px !important;
+  }
+  .logo img {
+    width: 50px;
+    height: 50px !important;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 767px) {
+
+
+}
+
+@media (min-width: 768px) and (max-width: 998px) {
+
+   
+ }
+@media (min-width: 998px) and (max-width: 1200px) {
+
+    
+}
+
+@media (min-width: 1200px) {
+
+}
+  
