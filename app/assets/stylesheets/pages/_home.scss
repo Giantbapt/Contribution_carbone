@@ -186,4 +186,29 @@ h3 span {
 	}
 
 }
+@media (max-width: 420px) {
+	.titre h1 {
+		font-size: 20px;
+	}
+	h2 {
+		font-size: 20px;
+	}
+	h3 {
+		font-size: 17px;
 
+	}
+	p {
+		font-size: 11px;
+	}
+	.illustration-indiv img {
+    	height: 70px;
+	}
+	
+	.tree img {
+    	height: 70px;
+	}
+	.img-collaboration {
+    	height: 150px;
+    	margin-top: 20px;
+	}
+}
