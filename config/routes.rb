@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'articles/new'
+  get 'articles/index'
+  get 'articles/show'
   root to: 'pages#home'
   
   get 'resultat', to: 'pages#resultat', as: :resultat
