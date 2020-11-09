@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get 'articles/new'
-  get 'articles/index'
-  get 'articles/show'
+  resources :articles, only: [:new,:index, :show]
+  post 'articles/create'
+ 
   root to: 'pages#home'
   
   get 'resultat', to: 'pages#resultat', as: :resultat
@@ -12,4 +12,5 @@ Rails.application.routes.draw do
    get '/404', to: "errors#not_found"
     get '/422', to: "errors#unacceptable"
     get '/500', to: "errors#internal_error"
+  devise_for :admins
 end

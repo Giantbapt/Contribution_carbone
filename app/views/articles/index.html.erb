@@ -1,2 +1,29 @@
-<h1>Articles#index</h1>
-<p>Find me in app/views/articles/index.html.erb</p>
+
+<% content_for :meta_title, "Parcourez notre blog pour en apprendre plus sur la compensation carbone !" %>
+<% content_for :meta_description, "Découvrez nos articles plaidant pour une compensation carbone plus juste, plus éthique et plus collaborative : la contribution carbone." %>
+<div class="banner-articles">
+		<h1 class="text-center">Vous pouvez trouver ici tous nos articles !</h1>
+	<div class="container col-md-10">
+		<p>Pour vous aider à mieux comprendre le fonctionnement de la compensation carbone et démontrer la nécessiter de l'initiative "Contribution Carbone", nous écrivons régulièrement de nouveaux articles. Nous cherchons à vous donner les clés pour vous informer sur la ce sujet et vous faire votre propre opinion !</p> 
+		<div class="articles row">
+			<% @articles.each do |article| %>
+				<%= link_to(article_path(article)) do |f| %> 
+				<div class="article">
+					<div class="content-photo">
+						<%= image_tag("cover.png", :class => "photo-article") %>
+					</div>
+					<div class="article-titre">
+						<h2><%= article.title %></h2>
+						<p><%= article.meta_description %> </p>
+					</div>
+					<!-- <div class="card-element row" >
+						<p style="color: black"><%=article.duration%></p>
+						<p style="color: black"><%=article.date%></p>
+					</div> -->
+				</div>
+				<%end%>
+			<%end%>
+		</div>	
+	</div>
+	
+</div>

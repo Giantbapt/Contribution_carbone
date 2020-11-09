@@ -17,6 +17,7 @@
 	align-item: center;
 	border-radius: 5px;
 	cursor: pointer;
+	box-shadow: 1px 2px 7px #327576;
 		font-family: "Poppins";
 
 	
@@ -88,6 +89,7 @@
 	align-item: center;
 	border-radius: 5px;
 	cursor: pointer;
+	box-shadow: 1px 2px 7px $green;
 	a {
 		color: $dark-green;
 	}
@@ -134,6 +136,7 @@
 	align-item: center;
 	border-radius: 5px;
 	cursor: pointer;
+	box-shadow: 1px 2px 7px #327576;
 	a {
 		color: white;
 	}

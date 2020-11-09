@@ -1,2 +1,28 @@
-<h1>Articles#show</h1>
-<p>Find me in app/views/articles/show.html.erb</p>
+<div class="banner-show">
+	<div class="container col-md-10">
+		<h1 class="text-center"><%= @article.title %></h1>
+		<% @jon = @article.text.html_safe %>
+		<%= @jon%>
+		<div class="author-show">
+			<% if @article.author == "Baptiste Chebassier"  %>
+				 <div class="d-flex flex-row-reverse">
+					 <p>Baptiste Chebassier</p>	
+					 <%= image_tag('Bapt.png', :class => 'avatar avatar-16 img-circle') %>
+				 	
+				 </div>
+			<% elsif @article.author == "Jeanne Rassart"%>
+				<div class="d-flex flex-row-reverse">
+					 <%= image_tag('jeanne.png', :class => 'avatar avatar-16 img-circle') %>
+					<p>Jeanne Rassart</p>
+				</div>
+				<% elsif @article.author == "Jeanne Rassart et Baptiste Chebassier"%>
+				<div class="d-flex flex-row-reverse">
+					<p>Jeanne Rassart et Baptiste Chebassier</p>
+				 	<%= image_tag('jeanne.png', :class => 'avatar avatar-16 img-circle') %>
+				 	<%= image_tag('Bapt.png', :class => 'avatar avatar-16 img-circle') %>
+				</div>
+			<% end%>
+			
+		</div>
+	</div>	
+</div>
