@@ -1,0 +1,34 @@
+<div class="article-new">
+  <div class="container offset-2 col-8">
+    <%= simple_form_for @article, url: articles_create_path do |f| %>
+        <div class="form-inputs">
+        <h2>Remplis ici ton article</h2>
+        <p>Titre</p>
+        <%= f.input :title, required: true, placeholder: 'Titre de l\'article', label: false%>
+        <p>Date</p>
+        <%= f.input :date, required: true, placeholder: 'Date', label: false %>
+        <br>
+        <p>Ville où ça a été écrit</p>
+        <%= f.input :address, required: true, placeholder: 'Adresse', label: false%>
+        <p>Temps de lecture</p>
+        <%= f.input :duration, required: true, placeholder: 'Temps de lecture', label: false  %>
+        Texte en html, images à mettre directement et à héberger avant sur Cloudinary (ne pas mettre le titre dans le corps du texte mais au-dessus, ne pas oublier de linker les mots en ouvrant une autre page :)
+        <%= f.input :text, required: true, placeholder: 'Texte en version html', label: false  %>
+        <%= f.input :author, :as => :select, :prompt => 'Auteur', collection: ['Jeanne Rassart', 'Baptiste Chebassier', 'Jeanne Rassart et Baptiste Chebassier', 'Autre'], label: false %><br>
+        <h3>Meta-Informations (propre à chaque article)</h3>
+        <%= f.label :slug,'Slug (c\'est la partie url après le  en général c\'est mieux d\'avoir le nom de l\'article (il ne faut pas d\'accents non plus ou d\'espace)'  %>
+        <%= f.input :slug, required: true, placeholder: 'Slug', label: false  %>
+        <%= f.input :meta_title, required: true, placeholder: 'Meta-title', label: false  %>
+        <%= f.input :meta_description, required: true, placeholder: 'Meta-description', label: false  %>
+        <%= f.input :meta_image, required: true, placeholder: 'Idéalement mettre l\'url de l\'image cloudinary', label: false  %>
+      </div>
+
+      <div class="form-actions d-flex justify-content-center">
+        <%= f.button :submit, "Valider l'article", class: "btn btn-questionnaire full-width" %>
+      </div>
+
+    <% end %>
+
+  </div>
+
+</div>
