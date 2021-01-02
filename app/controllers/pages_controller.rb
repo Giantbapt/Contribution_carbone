@@ -10,5 +10,8 @@ class PagesController < ApplicationController
 
   def questionnaire
   end
-  
+
+  def dashboard
+
+  end
 end
