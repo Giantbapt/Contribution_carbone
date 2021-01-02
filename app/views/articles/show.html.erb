@@ -2,7 +2,8 @@
 	<div class="container col-md-10">
 		<h1 class="text-center"><%= @article.title %></h1>
       <h3>Vous aimez la démarche ? Partagez là à vos proches !</h3>
-      <%= social_share_button_tag(@article.title) %>
+      <%= social_share_button_tag(@article.title, :allow_sites => %w(twitter facebook), :url => article_path(@article)) %>
+       <%= social_share_button_tag('Share to Facebook', :url => article_path(@article), desc: @article.title) %>
       <!-- <div class="row buttons-share">
         <a class="btn-mail" href="mailto:info@example.com?&subject=&body= Réalisez le cahier des charges de la compensation carbone !">EMAIL</a>
         <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false" >Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
