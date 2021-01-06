@@ -1,0 +1,27 @@
+
+
+.dashboard-articles {
+  background-color: white;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+}
+
+.dash-article {
+
+  border: 1px solid #090935;
+    box-shadow: 6px 6px rgba(9, 9, 53, 0.25);
+    margin-top: 20px;
+
+  background-color: white;
+    border-radius: 4px;
+    padding: 15px;
+    box-shadow: 6px 6px rgba(9, 9, 53, 0.25);
+    p {
+      opacity: 0.8;
+    }
+    h3 {
+      font-size: 20px;
+    }
+}

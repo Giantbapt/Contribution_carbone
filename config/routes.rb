@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :articles, only: [:new,:index, :edit, :update, :show]
+  resources :articles
   post 'articles/create'
 
   root to: 'pages#home'

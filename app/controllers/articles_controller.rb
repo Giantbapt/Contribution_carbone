@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-	before_action :authenticate_admin!, only: [:new, :edit]
+	before_action :authenticate_admin!, only: [:new, :edit, :destroy]
 
 def new
   	@article = Article.new
@@ -28,6 +28,13 @@ def new
   def show
   	@article = Article.find(params[:id])
 
+  end
+
+  def destroy
+    @article = Article.find(params[:id])
+    @article.destroy
+
+    redirect_to dashboard_path, notice:"Nous avons bien supprimé votre article"
   end
 
 

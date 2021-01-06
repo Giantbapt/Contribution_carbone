@@ -1,34 +1,24 @@
 <div class="banner-dashboard">
   <h1>Dashboard Admin</h1>
-  <div class="suggestion-content">
-    <h2>Suggestions</h2>
-    <div class="dashboard-suggestions">
-      <% @suggestions.each do |suggestion| %>
-      <div class="dash-suggestion">
-        <h3 class="text-center"><%= suggestion.ville %></h3>
-        <div class="dash-owner">
-          <p>Par : <%= suggestion.name_owner %></p>
-          <p>Email : <%= suggestion.email_owner %></p>
-        </div>
-        <br>
-        <div class="dash-contact">
-          <h4>Contact</h4>
-          <p> Nom du contact : <br><strong><%= suggestion.name_contact %>  </strong></p>
-          <p> Adresse : <br> <strong><%= suggestion.address %> </strong> </p>
-          <p> Ville : <br> <strong><%= suggestion.ville %> </strong> </p>
-          <p> Code Postal : <br> <strong><%= suggestion.code_postal %> </strong> </p>
-          <p> Numéro de tel : <br> <strong><%= suggestion.phone_number %>  </strong></p>
-          <p> Email : <br> <strong><%= suggestion.email %> </strong> </p>
-          <p> Description : <br> <strong><%= suggestion.description %> </strong> </p>
-          <p> Categorie : <br> <strong><%= suggestion.category %> </strong> </p>
+  <div class="article-content">
+    <h2>Articles</h2>
+    <div class="dashboard-articles">
+      <% @articles.each do |article| %>
+      <div class="dash-article">
+        <h3 class="text-center"><%= article.title %></h3>
+        <p><%=article.meta_description%></p>
+
+        <div class="dashboard-actions ">
+            <%= link_to "Modifier", edit_article_path(article), class:('btn-ressources-green')%>
+
+            <%= link_to "Supprimer", article_path(article), method: :delete, class:('btn btn-danger'), data: { confirm: 'Es-tu sûr(e) de vouloir supprimer cet article? ' }%>
+
+            <%= link_to "Voir l'article", article_path(article), class:('btn btn-primary') %>
 
         </div>
       </div>
       <% end %>
     </div>
-
-  </div>
-  <div class="dashboard-articles">
 
   </div>
 </div>

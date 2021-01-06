@@ -1,13 +1,13 @@
+<% content_for :meta_title, @article.meta_title %>
+<% content_for :meta_description, @article.meta_description %>
+<% content_for :meta_image, @article.meta_image %>
+
 <div class="banner-show">
 	<div class="container col-md-10">
-		<h1 class="text-center"><%= @article.title %></h1>
-      <h3>Vous aimez la démarche ? Partagez là à vos proches !</h3>
+    <h1 class="text-center"><%= @article.title %></h1>
+
 <!--       <%#= social_share_button_tag(@article.title, :allow_sites => %w(twitter facebook), :url => article_path(@article)) %>
        <%#= social_share_button_tag('Share to Facebook', :url => article_path(@article), desc: @article.title) %> -->
-       <div class="fb-share-button"
-        data-href= "wwww.contributioncarbone.fr<%=article_path(@article) %> "
-        data-layout="button_count">
-        </div>
 
       <!-- <div class="row buttons-share">
         <a class="btn-mail" href="mailto:info@example.com?&subject=&body= Réalisez le cahier des charges de la compensation carbone !">EMAIL</a>
@@ -40,5 +40,14 @@
 			<% end%>
 
 		</div>
+    <div class="share-buttons d-flex flex-row">
+       <div class="fb-share-button share-btn "
+        data-href= "wwww.contributioncarbone.fr<%=article_path(@article) %> "
+        data-layout="button_count">
+        </div>
+        <a class="share-btn twitter-share-button "
+          href="https://twitter.com/intent/tweet">
+        Tweet</a>
+    </div>
 	</div>
 </div>
